@@ -106,8 +106,9 @@ body{
         transform: translateX(-50%);
     }
     .box1 ul{
-        margin-top: 2.5vw;
-        margin-right: .5vw;
+        margin-top: 3vw;
+        margin-left: -2.7vw;
+        width: 100%;
     }
     .box1 ul li{
         position: relative;
@@ -115,22 +116,22 @@ body{
         list-style-type: none;
         height: 50px;
         width: 100%;
-        margin-left: 0.5px;
         line-height: 50px;
+        z-index: 0;
     }
     .box1 ul li a{
         color: #160023;
         display: flex;
         align-items: center;
         text-decoration: none;
+        margin-left: 3.5vw;
         transition: all 0.4s ease;
         border-radius: 12px;
         white-space: nowrap;
     }
-    .box1 ul li a:hover{
+    .box1 ul li:hover{
         color: #11101d;
         background: #dbcfee;
-        margin-left: 4vw;
     }
     .box1 ul li a img{
         height: 2vw;

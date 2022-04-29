@@ -28,35 +28,35 @@
                         <h6>Recent searches</h6>
                         <div class="menu_song">
                             <li class="songItem">
-                                <img src="images/img1.jpg" alt="Alan">
-                                <h5>
+                                <img src="images/img1.jpg" alt="Alan" id="poster">
+                                <h5 id="title">
                                     On My Way
                                     <div class="subtitle">Alan Walker</div>
-                                    <i class='bx bxs-right-arrow-circle' id="1"></i>
+                                    <i id="boic" class='bx bx-1 bxs-right-arrow-circle' id="1"></i>
                                 </h5>
                             </li>
                             <li class="songItem">
-                                <img src="images/img1.jpg" alt="Alan">
-                                <h5>
-                                    On My Way
-                                    <div class="subtitle">Alan Walker</div>
-                                    <i class='bx bxs-right-arrow-circle' id="2"></i>
+                                <img src="images/img1.jpg" alt="Alan" id="poster">
+                                <h5 id="title">
+                                    One Day
+                                    <div class="subtitle">Jnoas</div>
+                                    <i id="boic" class='bx bx-1 bxs-right-arrow-circle' id="2"></i>
                                 </h5>
                             </li>
                             <li class="songItem">
-                                <img src="images/img1.jpg" alt="Alan">
-                                <h5>
-                                    On My Way
-                                    <div class="subtitle">Alan Walker</div>
-                                    <i class='bx bxs-right-arrow-circle' id="3"></i>
+                                <img src="images/img1.jpg" alt="Alan" id="poster">
+                                <h5 id="title">
+                                    bad Blood
+                                    <div class="subtitle">Taylor Swift</div>
+                                    <i id="boic" class='bx bx-1 bxs-right-arrow-circle' id="3"></i>
                                 </h5>
                             </li>
                             <li class="songItem">
-                                <img src="images/img1.jpg" alt="Alan">
-                                <h5>
+                                <img src="images/img1.jpg" alt="Alan" id="poster">
+                                <h5 id="title">
                                     On My Way
                                     <div class="subtitle">Alan Walker</div>
-                                    <i class='bx bxs-right-arrow-circle' id="4"></i>
+                                    <i id="boic" class='bx bx-1 bxs-right-arrow-circle' id="4"></i>
                                 </h5>
                             </li>
                         </div>
@@ -73,8 +73,8 @@
                     <div class="h4">
                         <h4>Your top genres</h4>
                         <div class="btn_s">
-                            <i id="scrols-l" class='bx bxs-left-arrow-alt'></i>
-                            <i id="scrols-r" class='bx bxs-right-arrow-alt'></i>
+                            <i id="left-scrolls" class='bx bxs-left-arrow-alt'></i>
+                            <i id="right-scrolls" class='bx bxs-right-arrow-alt'></i>
                         </div>
                     </div>
                     <div class="items">
@@ -184,37 +184,42 @@
             </div>
         </div>
         <div class="box2">
-            <div class="player-container">
-                <div class="player-info">
-                    <div class="bts">
-                        <div class="pre"><i class='bx bxs-arrow-from-right' style="font-size: 2vw;"></i></div>
-                        <div class="start"><i class='bx bxs-right-arrow' style="margin-top: .4vw;"></i></div>
-                        <div class="next"><i class='bx bxs-arrow-from-left' style="font-size: 2vw;"></i></div>
-                    </div>
-                    <div class="artwork" style="width: 65px;">
-                        <span style="background-image: url('./img.jpg')"></span>
-                    </div>
-                    <div class="ta-meta">
-                        <a href="" class="title">1 Direction</a><br>
-                        <a href="" class="username">1 Direction</a>
-                    </div>
-                    <div class="play">
+            <div class="wave">
+                <din class="wave1"></din>
+                <din class="wave1"></din>
+                <din class="wave1"></din>
+            </div>
+            <img id = "deeksha" src="Images/img1.jpg" alt="MJ">
+            <h5>Blood On  <br> 
+                <div class="subtitle">1 Direction</div>
+            </h5>
+            <div class="skpl">
+                <i class='bx bx-skip-previous' id="back"></i>
+                <i class='bx bx-play-circle' id="bo"></i>
+                <i class='bx bx-skip-next' id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+               <input type="range" id="seek" min="0" value="0" max="100">
+               <div class="bar2" id="bar2"></div>
+               <div class="dot"></div> 
+            </div>
+            <span id="currentEnd">0:00</span>
 
-                    </div>
-                    <div class="volume">
-                        <i class='bx bx-volume-full' ></i>
-                    </div>
-                    <div class="rating">
-                        <img src="./Images/star.png" alt="">
-                    </div>
-                    <div class="repeat">
-                        <i class='bx bx-repeat' ></i>
-                    </div>
-                </div>
+            <div class="vol">
+                <i id="vol_icon" class='bx bx-volume-full' ></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div> 
             </div>
         </div>
         </div>
     </div>
+
+    <script src="masterplay.js"></script>
+    <script src="songItemList.js"></script>
+    <script src="r_l-scroll.js"></script>
+    <script src="hori.js"></script>
 </body>
 
 </html>

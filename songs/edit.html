@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload </title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="rectangle1">
+            <p class="para">Edit Profile pic</p>
+            <div class="profile-pic-div">
+                <img src="upload2.png" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+            <h2>Edit your profile</h2>
+            <form action="">
+                <span class="Name">NAME</span> <input type="text" class="f1">
+                <br>
+                <br>
+                <br>
+                <br>
+                <span class="DOB">D.O.B.</span><input type="date" class="f2">
+                <br>
+                <br>
+                <br>
+                <br>
+                <span class="Age"> EMAIL</span><input type="email" name="" class="f3">
+            </form>
+        </div>
+
+        <div class="box3">
+            <div class="line"></div>
+            <form action="">
+                <label for="Gender" class="gen">GENDER</label>
+                <select name="yourGenger" id="Gender">
+                    <option value="Select">SELECT...</option>
+                    <option value="Male">MALE</option>
+                    <option value="Female">FEMALE</option>
+                    <option value="Rather not say">RATHER NOT SAY</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <p class="FA">FAV ARTIST</p><input type="text" class="fav">
+                <br>
+                <br>
+                <p class="PH">PHONE NUMBER</p><input type="number" class="pno">
+            </form>
+
+            <h2 class="pass">EDIT PASS</h2>
+
+            <form action="" class="form3">
+                <span class="P1"><p class="pa1" id="currPass">CURRENT PASS</p><input type="password" class="password"></span> 
+                <span class="P1"><p class="pa1" id="newPass">NEW PASS</p><input type="password" class="password"></span>
+                <span class="P1"><p class="pa1" id="conPass">CONFIRM PASS</p><input type="password" class="password"></span>
+            </form>
+
+            <button class="button">Save Changes</button>
+        </div>
+
+        <script>
+            // Declaring html elements
+
+const imgDiv = document.querySelector('.profile-pic-div');
+const img = document.querySelector('#photo');
+const file = document.querySelector('#file');
+const uploadBtn = document.querySelector('#uploadBtn');
+
+//If user hovers on img div
+
+imgDiv.addEventListener('mouseenter' , function()
+{
+   uploadBtn.style.display = "block"
+});
+
+//If user hover out from img div
+
+imgDiv.addEventListener('mouseleave', function()
+{
+    uploadBtn.style.display = "none"
+});
+
+//img showing functionality when we upload an img to upload.
+
+//when we choose photo to upload 
+
+file.addEventListener('change', function(){
+    //This refers to file
+    const choosedFile = this.files[0];
+
+    if(choosedFile) {
+
+        const reader = new FileReader();
+        //FileReader is a predefined function of JS.
+
+        reader.addEventListener('load' ,function(){
+           img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+
+        //Let;s run.
+    }
+});
+        </script>
+
+
+</body>
+</html>

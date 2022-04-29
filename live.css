@@ -71,6 +71,8 @@ body{
 }
 .box2{
     position: absolute;
+    align-items: center;
+    display: flex;
     width: 85vw;
     height: 103px;
     left: 7vw;
@@ -78,100 +80,186 @@ body{
     background: linear-gradient(180deg, #FFFFFF -223.65%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(4px -4px 4px rgba(0, 0, 0, 0.25));
     }
-    .player-container{
-        position: relative;
-        align-items: center;
-        width: 98%;
-        height: 80%;
-        margin-left: .8vw;
-        margin-top: .6vw;
-    }
-    .player-info{
+    
+    .box2 .wave {
+        margin-left: 2vw;
+        width: 30px;
+        height: 30px;
+        /* border: 1px solid #fff; */
+        padding: 5px;
         display: flex;
+        align-items: flex-end;
+        margin-right: 10px;
     }
-    .bts{
-        display: flex;
-        position: relative;
-        top: 1.3vw;
-        margin-right: 1vw;
-        margin-left: 1vw;
+    
+    .box2 .wave .wave1 {
+        width: 3px;
+        height: 10px;
+        margin-right: 3px;
+        border-radius: 10px 10px 0px 0px;
+        background: #11101d;
+        animation: unset;
     }
-    .bts .bx{
-        font-size: 1.7vw;
-        margin: 0.2vw;
+    
+    
+    .box2 img{
+        width: 35px;
+        height: 35px;
     }
-    .artwork{
-        width: 100%;
-        margin-right: 1vw;
-        /* border: 1vw solid #160023; */
+    
+    .box2 h5{
+        width: 130px;
+        font-size: 15px;
+        margin-left: 15px;
+        color: #21042D;
+        line-height: 17px;
     }
-    .artwork span{
-        background-size: cover;
-        padding-bottom: 100%;
-        background-position: center;
-        display: block;
+    
+    .box2 h5 .subtitle{
+        font-size: 10px;
+        color: #4c5262;
     }
-    .ta-meta{
-        position: relative;
-        margin-left: 1vw;
-        top: .5vw;
+    
+    .box2 .skpl{
+        font-size: 20px;
+        color: #fff;
+        margin: 0px 20px 0px 40px;
     }
-    .ta-meta a{
-        list-style-type: none;
-        text-decoration: none;
-    }
-    .title{
-        font-weight: 600;
-        font-size: 1.3vw;
-    }
-    .username{
-        font-size: .9vw;
-        font-weight: 500;
-        color: #bc9cf0;
-    }
-    .play{
-        width: 60%;
-        height: .8vw;
-        background-color: #bc9cf0;
-        margin-left: 1.3vw;
-        margin-top: 2vw;
-        border-radius: 2vw;
-    }
-    .volume{
-        width: 2vw;
-        height: 2vw;
-        /* background-color: #bc9cf0; */
-        margin-left: 1.3vw;
-        margin-top: 1.2vw;
-    }
-    .volume .bx{
-        width: 100%;
-        height: 100%;
+    
+    .box2 .skpl{
         font-size: 2vw;
+        color: #11101d;
+        margin: 0px 20px 0px 40px;
     }
-    .rating{
-        width: 2vw;
-        height: 2vw;
-        /* background-color: #bc9cf0; */
-        margin-left: 1.3vw;
-        margin-top: 1.2vw;
+    
+    .box2 .skpl .bx{
+        cursor: pointer;
+        outline: none;
     }
-    .rating img{
-        width: 100%;
+    
+    .box2 .skpl .bx:nth-child(2){
+        margin: 0px 5px;
+        transition: .3s linear;
+    }
+    
+    .box2 span{
+        color: #11101d;
+        width: 32px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    
+    .box2 #currentStart{
+        margin: 0px 0px 0px 20px;
+    }
+    
+    .box2 .bar {
+        position: relative;
+        width: 43%;
+        height: 2px;
+        background: rgb(105, 105, 170, .1);
+        margin: 0px 15px 0px 10px;
+    }
+    
+    .box2 .bar .bar2{
+        position: absolute;
+        width: 0%;
         height: 100%;
+        background: #11101d;
+        top: 0;
     }
-    .repeat{
-        height: 2vw;
-        width: 2vw;
-        /* background-color: #bc9cf0; */
-        margin-left: 1.3vw;
-        margin-top: 1.2vw;
+    
+    .box2 .bar .dot{
+        position: absolute;
+        background: #11101d;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        left: 0%;
+        top: -1px;
+        transition: 1s linear;
     }
-    .repeat .bx{
+    
+    .box2 .bar .dot::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #11101d;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        box-shadow: inset 0px 0px 3px #11101d;
+    }
+    
+    .box2 .bar input{
+        position: absolute;
         width: 100%;
+        top: -6px;
+        left: 0;
+        cursor: pointer;
+        z-index: 99999999;
+        transition: 3s linear;
+        opacity: 0;
+    }
+    
+    .box2 .vol{
+        position: relative;
+        width: 100px;
+        height: 2px;
+        margin-left: 50px;
+        background: rgb(105, 105, 170, .1);
+    }
+    
+    .box2 .vol .bx{
+        position: absolute;
+        color: #11101d;
+        font-size: 1.4vw;
+        left: -34px;
+        top: -.5vw;
+    }
+    
+    .box2 .vol input{
+        position: absolute;
+        width: 100%;
+        top: -10px;
+        left: 0;
+        cursor: pointer;
+        z-index: 99999999;
+        transition: 3s linear;
+        opacity: 0;
+    }
+    
+    .box2 .vol .vol_bar{
+        position: absolute;
+        width: 0%;
         height: 100%;
-        font-size: 2vw;
-    }   
+        background: #11101d;
+        top: 0;
+    }
+    
+    .box2 .vol .dot{
+        position: absolute;
+        background: #11101d;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        left: 0%;
+        top: -1px;
+        transition: 1s linear;
+    }
+    
+    .box2 .vol .dot::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #11101d;
+        border-radius: 50%;
+        left: -6px;
+        top: -6px;
+        box-shadow: inset 0px 0px 3px #11101d;
+    }
     .box1 .logo_content .logo{
         color: #160023;
         display: flex;
@@ -209,8 +297,9 @@ body{
         transform: translateX(-50%);
     }
     .box1 ul{
-        margin-top: 2.5vw;
-        margin-right: .5vw;
+        margin-top: 3vw;
+        margin-left: -2.7vw;
+        width: 100%;
     }
     .box1 ul li{
         position: relative;
@@ -218,22 +307,22 @@ body{
         list-style-type: none;
         height: 50px;
         width: 100%;
-        margin-left: 0.5px;
         line-height: 50px;
+        z-index: 0;
     }
     .box1 ul li a{
         color: #160023;
         display: flex;
         align-items: center;
         text-decoration: none;
+        margin-left: 3.5vw;
         transition: all 0.4s ease;
         border-radius: 12px;
         white-space: nowrap;
     }
-    .box1 ul li a:hover{
+    .box1 ul li:hover{
         color: #11101d;
         background: #dbcfee;
-        margin-left: 4vw;
     }
     .box1 ul li a img{
         height: 2vw;

@@ -1,0 +1,77 @@
+[
+    {
+        "songName": "Bandheya",
+        "songImg": "url = ' https://i.scdn.co/image/ab67616d0000b2735cd31847e786b7e1e185e062'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Mere Yara",
+        "songImg": "url = ' https://www.ilyricshub.com/wp-content/uploads/2021/10/mere-yaara-sooryavanshi-300x169.jpg'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Faded",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.UHoUagbdEdt1_oQksnWL2AHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Alan Waker"
+    },
+    {
+        "songName": "Dangal",
+        "songImg": "url ='https://th.bing.com/th/id/OIP.bR0MukpYqpmaH8AJIxc7dAHaLH?pid=ImgDet&rs=1'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Jaan Nisar",
+        "songImg":"url = 'https://th.bing.com/th/id/OIP.pzO3qfxgsBLUsoFPeKHCowHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7'",        
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Ghungro",
+        "songImg": "url = 'https://i.scdn.co/image/ab67616d0000b273281650a8e8c5d04658d31ac1'",
+        "artistName": "Benny dayal"
+    },
+    {
+        "songName": "Beat It",
+        "songImg": "url = 'https://m.media-amazon.com/images/M/MV5BOWIzMWYwODItNjRjNC00N2VhLWI2NGItMzM0YTU1ZTY3NTBlXkEyXkFqcGdeQXVyNDE1MjQ4MTk@._V1_FMjpg_UX1000_.jpg'",
+        "artistName": "Micheal Jackson"
+    },
+    {
+        "songName": "Sanam",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.GIqVrBhdxvPiURICk7oTBQHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Shivvay",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.56fB2hDFuNpBxRrW9aIs2wHaJ3?w=182&h=243&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Baadshah"
+    },
+    {
+        "songName": "Panga",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.fU7GjF7YfhPuju3BwNYmlQHaFf?w=182&h=135&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Titli",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.WbfyafNume5lwuwJ6ng49wHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Shreya Ghoshal"
+    },
+    {
+        "songName": "Shivvay",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.56fB2hDFuNpBxRrW9aIs2wHaJ3?w=182&h=243&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Baadshah"
+    },
+    {
+        "songName": "Panga",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.fU7GjF7YfhPuju3BwNYmlQHaFf?w=182&h=135&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Arijit Singh"
+    },
+    {
+        "songName": "Titli",
+        "songImg": "url = 'https://th.bing.com/th/id/OIP.WbfyafNume5lwuwJ6ng49wHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7'",
+        "artistName": "Shreya Ghoshal"
+    },
+    {
+        "songName": "Bandheya",
+        "songImg": "url = ' https://i.scdn.co/image/ab67616d0000b2735cd31847e786b7e1e185e062'",
+        "artistName": "Arijit Singh"
+    }
+]

@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="signup.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
 </head>
 
@@ -19,43 +21,112 @@
         <div class="circle3"></div>
         <div class="circle4"></div>
         <div class="rectangle1">
-            <div class="mus-logo">
-                <img src="./Images/headphones.png" alt="">
+            <div class="container">
+                <div class="signin-signup">
+                    <form action="" class="sign-in-form">
+                        <h2 class="title">SIGN IN</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                        </div>
+                        <a href="home.html"><input type="submit" value="Login" class="btn" onclick="location.href='home.html'"></a>
+                        <p class="social-text">Or sign in with social platform.</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon"> <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon"> <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                    </form>
+        
+                    <form action="" class="sign-up-form">
+                        <h2 class="title">SIGN UP</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        </div>
+                        <input type="submit" value="Sign up" class="btn">
+                        <p class="social-text">Or sign in with social platform.</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon"> <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon"> <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                    </form>
+                </div>
+                <div class="panels-container">
+                    <div class="panel left-panel">
+                        <div class="content">
+                            <h3>Member of Musicana?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nihil voluptatem officiis quas fugit illum!</p>
+                            <button class="btn" id="sign-in-btn">Sign In</button>
+                        </div>
+                        <img src="signin.svg" alt="" class="image">
+                    </div>
+                    <div class="panel right-panel">
+                        <div class="content">
+                            <h3>New to Musicana?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nihil voluptatem officiis quas fugit illum!</p>
+                            <button class="btn" id="sign-up-btn">Sign Up</button>
+                        </div>
+                        <img src="signup.svg" alt="" class="image">
+                    </div>
+                </div>
             </div>
-            <h1>
-                Welcome to Musicana
-            </h1>
-            <p>Sign in and enjoy the music</p>
-        </div>
-        <div class="content_box">
-            <div class="formbox">
-                <h2>Login</h2>
-                <form>
-                    <div class="inputbox">
-                        <span>Username</span>
-                        <input type="text" name="">
-                    </div>
-                    <div class="inputbox">
-                        <span>Password</span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="remember">
-                        <label><input type="checkbox" name="">Remember me</label>
-                    </div>
-                    <div class="inputbox">
-                        <button class="signin"><a href="./home.html">Sign In</a></button>
-                    </div>
-                    <div class="inputbox">
-                        <p>Don't have an account? <a href="Register.html">Sign Up</a></p>
-                    </div>
-                </form>
-                <ul class="sci">
-                    <li><i class='bx bxl-facebook-circle'></i></li>
-                    <li><i class='bx bxl-instagram-alt'></i></li>
-                    <li><i class='bx bxl-twitter'></i></li>
-                </ul>
-            </div>
-        </div>
+
+            <script>
+                const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn= document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+
+//Created at 30.40
+const sign_in_btn2 = document.querySelector("#sign-in-btn2");
+const sign_up_btn2= document.querySelector("#sign-up-btn2");
+
+sign_up_btn.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
+});
+
+//Created at 30.40
+sign_up_btn2.addEventListener("click", () => {
+    container.classList.add("sign-up-mode2");
+});
+
+sign_in_btn2.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode2");
+});
+            </script>
        
 </body>
 

@@ -39,12 +39,12 @@ https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/dbe212
 
 ## How to Use:
  1. Clone the Repository:
-  - Clone or download the project repository from GitHub.
+    - Clone or download the project repository from GitHub.
  2. Navigate to Project Directory:
-  - Open a terminal or command prompt and navigate to the directory where the project is located.
+    - Open a terminal or command prompt and navigate to the directory where the project is located.
  3. Open in a Browser:
-  - Simply open the index.html file in your preferred web browser. You can do this by double-clicking the file or using the "Open with" option in your browser.
+    - Simply open the index.html file in your preferred web browser. You can do this by double-clicking the file or using the "Open with" option in your browser.
  4. Explore the Website:
-  - Once the website is open in your browser, navigate through different pages using the provided links or buttons.
+    - Once the website is open in your browser, navigate through different pages using the provided links or buttons.
  5. Interact with Features:
- - Explore the login, registration, home, search, live, favorites, shop, settings, and edit profile pages. Interact with the features provided on each page as per the frontend design.
+    - Explore the login, registration, home, search, live, favorites, shop, settings, and edit profile pages. Interact with the features provided on each page as per the frontend design.

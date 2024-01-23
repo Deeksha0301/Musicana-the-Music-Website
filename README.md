@@ -26,6 +26,7 @@ https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/dbe212
  - ![Screenshot 2023-07-31 132859](https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/25b42a77-2204-4404-a372-c1f449c08fba)
 
 ## Edit profile
+ - Here one can upload their photo, add their birth date, etc. 
  - ![Screenshot 2023-07-31 134006](https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/52644b4f-7142-487d-b11d-386e70cd8149)
 
 

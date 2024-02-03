@@ -2,6 +2,16 @@
  Explore a vibrant and intuitive interface to discover the latest music.
 ![x](https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/39d661f2-cd80-4562-9b90-9a9b81f23a78)
 
+
+ ## Tech Stack Used:
+ - HTML: Markup language used for structuring the content of web pages.
+
+ - CSS: Stylesheet language used for describing the presentation of a document written in HTML.
+
+ - JavaScript: Programming language that enables dynamic content, interactivity, and client-side scripting.
+
+ ## Explore all the pages ⬇️
+
 https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/dbe2127a-6a8b-4cce-9c9d-bbfad69bb07f
 
 
@@ -30,12 +40,6 @@ https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/dbe212
  - ![Screenshot 2023-07-31 134006](https://github.com/Deeksha0301/Musicana-the-Music-Website/assets/92042650/52644b4f-7142-487d-b11d-386e70cd8149)
 
 
- ## Tech Stack Used:
- - HTML: Markup language used for structuring the content of web pages.
-
- - CSS: Stylesheet language used for describing the presentation of a document written in HTML.
-
- - JavaScript: Programming language that enables dynamic content, interactivity, and client-side scripting.
 
 ## How to Use:
  1. Clone the Repository:
